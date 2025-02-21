@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bundle">
+        <hr />
+        <p>YAY! It’s BOGO</p>
+        <hr />
+      </div>
+      <form>
+        <div class="outer-group">
+          <div class="group-label" onclick="toggleGrid('grid1')">
+            <input type="radio" id="unit1" name="unit" />
+            <label for="unit1">
+              <div>
+                <h6>1 Unit <span>10% off</span></h6>
+                <p style="font-size: 14px">Standard Price</p>
+              </div>
+              <div>
+                <h6>$ 10.00 USD</h6>
+                <p class="overLine">$24.00 USD</p>
+              </div>
+            </label>
+          </div>
+          <div>
+            <div class="grid-container" id="grid1">
+              <div class="grid-item"></div>
+              <div class="grid-item align-left"><p>Size</p></div>
+              <div class="grid-item align-left"><p>Colour</p></div>
+              <div class="grid-item align-right" style="font-weight: bold">
+                <p>#1</p>
+              </div>
+              <div class="grid-item">
+                <select name="cars" id="size">
+                  <option value="volvo">XS</option>
+                  <option value="saab">S</option>
+                  <option value="opel">M</option>
+                  <option value="audi">L</option>
+                </select>
+              </div>
+              <div class="grid-item">
+                <select name="cars" id="color">
+                  <option value="volvo">Black</option>
+                  <option value="saab">Red</option>
+                  <option value="opel">Pink</option>
+                  <option value="audi">Green</option>
+                </select>
+              </div>
+              <div class="grid-item align-right" style="font-weight: bold">
+                <p>#2</p>
+              </div>
+              <div class="grid-item">
+                <select name="cars" id="cars">
+                  <option value="volvo">XS</option>
+                  <option value="saab">S</option>
+                  <option value="opel">M</option>
+                  <option value="audi">L</option>
+                </select>
+              </div>
+              <div class="grid-item">
+                <select name="cars" id="cars">
+                  <option value="volvo">Black</option>
+                  <option value="saab">Red</option>
+                  <option value="opel">Pink</option>
+                  <option value="audi">Green</option>
+                </select>
+              </div>
+
+              <!-- <div><span>Size</span><span>Colour</span></div>
+              <div>
+                <p>#1</p>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="outer-group">
+          <div class="group-label" onclick="toggleGrid('grid2')">
+            <input type="radio" id="unit2" name="unit" />
+            <label for="unit2">
+              <div>
+                <h6>2 Unit <span>20% off</span></h6>
+              </div>
+              <div>
+                <h6>$ 18.00 USD</h6>
+                <p class="overLine">$24.00 USD</p>
+              </div>
+            </label>
+          </div>
+          <div>
+            <div class="grid-container" id="grid2">
+              <div class="grid-item"></div>
+              <div class="grid-item align-left"><p>Size</p></div>
+              <div class="grid-item align-left"><p>Colour</p></div>
+              <div class="grid-item align-right">
+                <p style="font-weight: bold">#1</p>
+              </div>
+              <div class="grid-item">
+                <select name="size" id="size">
+                  <option value="volvo">XS</option>
+                  <option value="saab">S</option>
+                  <option value="opel">M</option>
+                  <option value="audi">L</option>
+                </select>
+              </div>
+              <div class="grid-item">
+                <select name="color" id="color">
+                  <option value="volvo">Black</option>
+                  <option value="saab">Red</option>
+                  <option value="opel">Pink</option>
+                  <option value="audi">Green</option>
+                </select>
+              </div>
+              <div class="grid-item align-right">
+                <p style="font-weight: bold">#2</p>
+              </div>
+              <div class="grid-item">
+                <select name="size" id="cars">
+                  <option value="volvo">XS</option>
+                  <option value="saab">S</option>
+                  <option value="opel">M</option>
+                  <option value="audi">L</option>
+                </select>
+              </div>
+              <div class="grid-item">
+                <select name="color" id="cars">
+                  <option value="volvo">Black</option>
+                  <option value="saab">Red</option>
+                  <option value="opel">Pink</option>
+                  <option value="audi">Green</option>
+                </select>
+              </div>
+
+              <!-- <div><span>Size</span><span>Colour</span></div>
+              <div>
+                <p>#1</p>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="outer-group">
+          <div class="group-label" onclick="toggleGrid('grid3')">
+            <input type="radio" id="unit3" name="unit" />
+            <label for="unit3">
+              <div>
+                <h6>3 Unit <span>30% off</span></h6>
+              </div>
+              <div>
+                <h6>$ 24.00 USD</h6>
+                <p class="overLine">$24.00 USD</p>
+              </div>
+            </label>
+          </div>
+          <div>
+            <div class="grid-container" id="grid3">
+              <div class="grid-item"></div>
+              <div class="grid-item align-left"><p>Size</p></div>
+              <div class="grid-item align-left"><p>Colour</p></div>
+              <div class="grid-item align-right" style="font-weight: bold">
+                <p>#1</p>
+              </div>
+              <div class="grid-item">
+                <select name="cars" id="size">
+                  <option value="volvo">XS</option>
+                  <option value="saab">S</option>
+                  <option value="opel">M</option>
+                  <option value="audi">L</option>
+                </select>
+              </div>
+              <div class="grid-item">
+                <select name="cars" id="color">
+                  <option value="volvo">Black</option>
+                  <option value="saab">Red</option>
+                  <option value="opel">Pink</option>
+                  <option value="audi">Green</option>
+                </select>
+              </div>
+              <div class="grid-item align-right" style="font-weight: bold">
+                <p>#2</p>
+              </div>
+              <div class="grid-item">
+                <select name="cars" id="cars">
+                  <option value="volvo">XS</option>
+                  <option value="saab">S</option>
+                  <option value="opel">M</option>
+                  <option value="audi">L</option>
+                </select>
+              </div>
+              <div class="grid-item">
+                <select name="cars" id="cars">
+                  <option value="volvo">Black</option>
+                  <option value="saab">Red</option>
+                  <option value="opel">Pink</option>
+                  <option value="audi">Green</option>
+                </select>
+              </div>
+
+              <!-- <div><span>Size</span><span>Colour</span></div>
+              <div>
+                <p>#1</p>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="delivery">
+        <p style="color: #ff6b82">Free Delivery</p>
+        <p style="color: #000000">Total : $18.00 USD</p>
+      </div>
+      <button>+ Add to Cart</button>
+      <div class="copy-right"><p>&#64; Powered by Pumper</p></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
