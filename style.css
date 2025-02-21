@@ -199,3 +199,31 @@ button {
   font-weight: 400;
   color: #c8c8c8;
 }
+
+.popular {
+  position: relative;
+}
+.popular::before {
+  content: "MOST POPULAR";
+  position: absolute;
+  top: -10px;
+  right: 3px;
+  background-color: #ff6b82;
+  border-radius: 0px 0px 4px 4px;
+  padding: 3px 6px;
+  font-size: 12px;
+  color: white;
+  /* transform: translateX(-50%); */
+}
+
+.popular::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  right: 0px;
+  width: 115px;
+  height: 10px;
+  background-color: #580310;
+  border-radius: 10px 10px 0px 0px;
+  z-index: -1;
+}
